@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        width: 20%;
+        height: 150px;
+        margin: auto;
+      }
+      #div2 {
+        width: 100%;
+        height: 50px;
+        background-color: blueviolet;
+        position: relative;
+
+        color: blue;
+      }
+      #div3 {
+        width: 100%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <div id="div2"></div>
+      <div id="div3"></div>
+    </div>
+
+    <script>
+      var random;
+      var yorum;
+      let kose = [
+        {
+          yorum: "Herşey olması gerektiği gibiydi teşekkkürler",
+          isim: "Ahmet Gök",
+        },
+        { yorum: "Herşeyden memnun kaldım", isim: "Fadime Tugay" },
+      ];
+      function resimSec() {
+        random = Math.round(Math.random() * 1);
+      }
+
+      setInterval(() => {
+        resimSec();
+
+        document.querySelector("#div2").innerHTML = kose[random].yorum;
+        document.querySelector("#div3").innerHTML = kose[random].isim;
+      }, 2000);
+    </script>
+  </body>
+</html>

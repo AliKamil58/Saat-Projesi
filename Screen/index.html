@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div id="div1"></div>
+</head>
+<body>
+   <script>
+    //Biz burada  x yazdıktan sonra width yazarak ekran çzünürlük oranına ulaşabiliriz.
+    //Biz avail width diyerek ekranda kullanabileceğimiz genişlik  değerini söylüyoruz.
+    //avail height ise ekranda kullanabileceğimiz yükseklik değerimizdir.
+    //avail height sadece iki kısmı ekrandan başalgıç yeri ile son yeri hesaba katarak.
+    //Biz screen  pikselDepth diyerekte piksel derinliğini ayarlıyoruz.
+    var x=screen.pixelDepth;
+    document.getElementById("div1").innerHTML=x;
+
+   </script>
+</body>
+</html>

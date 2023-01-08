@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+   <img src="" alt="" id="img" height="600" width="1300"/>
+    <script>
+       
+        var text;
+        debugger
+           function resimSec(){
+          
+            let a= ["2.jpeg","avatar-1.png","nedirmobil.jpeg","ağaçkuru"]
+            var  random=Math.round(Math.random()*2)
+         text= a[random];
+           
+
+
+
+           }
+           setInterval(function(){resimSec();
+            
+            document.getElementById("img").src=text
+           },2000)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #artır {
+            background: green;
+            border: none;
+            width:35px;
+            height:30px;
+            font-size:25px;
+        }
+        #azalt{
+            background: green;
+            border: none;
+            width:35px;
+            height:30px;
+            font-size:25px;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="text" type="text" value="0"
+   >
+    <button onclick="artır()"id="artır">+</button>
+    <button onclick="azalt()"id="azalt">-</button>
+<script>
+
+function artır() {
+let a=document.getElementById("text").value
+a=Number(a)
+a+=1
+document.getElementById("text").value=a;
+}
+
+function azalt() {
+let a=document.getElementById("text").value
+a=
+Number(a)
+a-=1
+document.getElementById("text").value=a;
+}
+
+
+
+
+</script>
+</body>
+
+</html>

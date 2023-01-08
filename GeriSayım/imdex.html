@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .div {
+        float: left;
+        background-color: blanchedalmond;
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
+        font-size: 140px;
+        text-align: center;
+      }
+      .genel {
+        margin-left: 300px;
+        display: flex;
+        margin-top: 200px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="genel">
+      <div class="saat div"></div>
+      <div class="dakika div"></div>
+      <div class="saniye div"></div>
+    </div>
+
+    <script>
+      let zaman = new Date();
+      let saat = 1;
+      let dakika = 59;
+      let saniye = 59;
+      setInterval(() => {
+        document.querySelector(".saat").innerHTML = saat;
+        document.querySelector(".dakika").innerHTML = dakika;
+        document.querySelector(".saniye").innerHTML = saniye--;
+
+        if (saniye === Number(0)) {
+          saniye = 60;
+          dakika--;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
